@@ -1,0 +1,118 @@
+@layer reset {
+
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+    }
+
+    :where(:not(dialog)) {
+        margin: 0;
+    }
+}
+
+@layer demo {
+    :root {
+        color-scheme: dark;
+        --nav-block-size: 74px;
+    }
+}
+
+
+@layer components.collections {
+    .section {
+        background-color: white;
+        display: grid;
+        inline-size: 100%;
+        min-block-size: max(600px, calc(100dvb - var(--nav-block-size)));
+        padding-block-end: 0.75rem;
+        padding-inline: 0.75rem;
+        place-items: center;
+        position: relative;
+    }
+
+    .cards {
+        background-color: white;
+        block-size: 100%;
+        display: grid;
+        gap: 1rem;
+        inline-size: 100%;
+
+        @media (width > 1024px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .card {
+        container-type: size;
+        inline-size: 100%;
+        block-size: 100%;
+        text-decoration: none;
+        min-block-size: 280px;
+        position: relative;
+
+        &:hover::after {
+            opacity: 1;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            inset: 0;
+            mix-blend-mode: multiply;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 0.2s ease;
+        }
+    }
+
+    .card-1::after {
+        background-color: hsla(268, 98%, 52%, 0.356);
+    }
+
+    .card-2::after {
+        background-color: hsl(22, 100%, 50%);
+    }
+
+    .card-3::after {
+        background-color: hsl(34, 31%, 46%);
+    }
+
+    .card-4::after {
+        background-color: hsl(202, 88%, 51%);
+    }
+    .card-5::after {
+        background-color: hsl(330, 83%, 65%);
+    }
+    .card-6::after {
+        background-color: hsl(239, 100%, 50%);
+    }
+
+
+    .visual {
+        block-size: 100%;
+        display: grid;
+        inline-size: 100%;
+        overflow: hidden;
+        place-items: center;
+
+        >* {
+            grid-area: 1/1;
+        }
+    }
+
+    .card-img {
+        block-size: 100cqb;
+        inline-size: 100cqi;
+        display: block;
+        background: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
+        filter: grayscale();
+        object-fit:fill;
+    }
+
+    .figcaption {
+        z-index: 2;
+        color: white;
+        font: 400 8cqi / normal system-ui, sans-serif;
+    }
+}

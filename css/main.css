@@ -2665,7 +2665,7 @@ input::-moz-focus-inner {
 }
 
 .s-cta a {
-  color: #ffffff;
+  color: #22defb;
 }
 
 .s-cta a:hover,
@@ -2684,7 +2684,7 @@ input::-moz-focus-inner {
 
 .cta-content .btn {
   max-width: 600px;
-  background-color: #22defb;
+  background-color: black;
   border: 0.2rem solid #22defb;
 }
 

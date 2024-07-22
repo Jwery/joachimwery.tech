@@ -88,12 +88,11 @@
     .card-6::after {
         background-color: hsl(239, 100%, 42%);
     }
-    .card-7::after {
-        background-color: hsl(0, 0%, 0%);
+    .card-7 {
+        background-color: black;
     }
-    .card-8::after {
-        background-color: hsl(71, 94%, 51%);
-    }
+
+
 
 
 
@@ -121,6 +120,12 @@
     .figcaption {
         z-index: 2;
         color: white;
+        font: 400 8cqi / normal system-ui, sans-serif;
+        margin: auto;
+    }
+    .figcaption2 {
+        z-index: 2;
+        color: black;
         font: 400 8cqi / normal system-ui, sans-serif;
         margin: auto;
     }

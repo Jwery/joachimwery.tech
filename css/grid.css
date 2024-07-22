@@ -48,8 +48,9 @@
         inline-size: 100%;
         block-size: 100%;
         text-decoration: none;
-        min-block-size: 280px;
+        min-block-size: 100%;
         position: relative;
+  
 
         &:hover::after {
             opacity: 1;
@@ -85,8 +86,15 @@
         background-color: hsl(330, 83%, 65%);
     }
     .card-6::after {
-        background-color: hsl(239, 100%, 50%);
+        background-color: hsl(239, 100%, 42%);
     }
+    .card-7::after {
+        background-color: hsl(0, 0%, 0%);
+    }
+    .card-8::after {
+        background-color: hsl(71, 94%, 51%);
+    }
+
 
 
     .visual {
@@ -114,5 +122,6 @@
         z-index: 2;
         color: white;
         font: 400 8cqi / normal system-ui, sans-serif;
+        margin: auto;
     }
 }

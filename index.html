@@ -1,662 +1,504 @@
-<!DOCTYPE html>
-<html class="no-js" lang="fr">
+﻿<!DOCTYPE html>
+<html lang="fr" class="no-js">
 <head>
+  <!-- Meta de base -->
+  <meta charset="utf-8" />
+  <title>Joachim Wéry — Développeur & Designer</title>
+  <meta name="description" content="Portfolio de Joachim Wéry — Développement web, UI/UX, graphisme, photo & vidéo." />
+  <meta name="author" content="Joachim Wéry" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>Joachim Wéry</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/grid.css" />
 
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Scripts tête -->
+  <script src="js/modernizr.js" defer></script>
+  <script src="js/pace.min.js" defer></script>
 
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grid.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-
-
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
 </head>
 
 <body id="top">
+  <div id="preloader" aria-hidden="true">
+    <div id="loader"></div>
+  </div>
 
-    <div id="preloader">
-        <div id="loader"></div>
+  <!-- En‑tête du site -->
+  <header class="s-header" role="banner">
+    <div class="header-logo">
+      <a class="site-logo" href="index.html" aria-label="Retour à l’accueil">
+        <img src="images/logo.svg" alt="Logo Joachim Wéry" />
+      </a>
     </div>
 
-    <!-- site header
-    ================================================== -->
-    <header class="s-header">
+    <nav class="header-nav-wrap" aria-label="Navigation principale">
+      <ul class="header-main-nav">
+        <li class="current"><a class="smoothscroll" href="#intro" title="Intro">Intro</a></li>
+        <li><a class="smoothscroll" href="#about" title="À propos">À propos</a></li>
+        <li><a class="smoothscroll" href="#services" title="Compétences">Compétences</a></li>
+        <li><a class="smoothscroll" href="#works" title="Travaux">Travaux</a></li>
+        <li><a class="smoothscroll" href="#contact" title="Contact">Contact</a></li>
+      </ul>
 
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.svg" alt="Homepage">
-            </a>
+      <ul class="header-social">
+        <li><a target="_blank" rel="noopener" href="https://twitter.com/joachim_wery" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/joachim-wery/" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+        <li><a target="_blank" rel="noopener" href="https://github.com/Jwery" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+
+    <a class="header-menu-toggle" href="#" aria-label="Ouvrir le menu"><span>Menu</span></a>
+  </header>
+
+  <!-- Intro -->
+  <section id="intro" class="s-intro target-section" aria-label="Intro">
+    <div class="row intro-content">
+      <div class="column large-9 mob-full intro-text">
+        <h3>Bonjour, moi c’est Joachim Wéry</h3>
+        <h1>
+          Développeur<br />
+          Designer UI/UX<br />
+          Graphiste
+        </h1>
+      </div>
+
+      <div class="intro-scroll">
+        <a href="#about" class="intro-scroll-link smoothscroll" aria-label="Aller à la section À propos">Scrollez pour voir plus</a>
+      </div>
+
+      <div class="intro-grid" aria-hidden="true"></div>
+      <div class="intro-pic" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- À propos -->
+  <section id="about" class="s-about target-section" aria-label="À propos">
+    <div class="about-me">
+      <div class="row heading-block" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading">À propos</h2>
         </div>
+      </div>
 
-        <nav class="header-nav-wrap">
-            <ul class="header-main-nav">
-                <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">A Propos</a></li>
-                <li><a class="smoothscroll" href="#services" title="services">Compétences</a></li>
-                <li><a class="smoothscroll" href="#works" title="works">Travaux</a></li>
-                <li><a class="smoothscroll" href="#contact" title="contact us">Contact</a></li>	
-            </ul>
+      <div class="row about-me__content" data-aos="fade-up">
+        <div class="column large-full about-me__text">
+          <p class="lead">
+            Je m’appelle Joachim Wéry. Je suis développeur et webdesigner avec près de deux ans d’expérience.
+          </p>
+          <p>
+            Passionné par les médias et le numérique, j’ai obtenu un bachelier en écriture multimédia, puis un master en architecture transmédia. Pour rester à la pointe, j’ai suivi une formation intensive de six mois en webdesign avant de me spécialiser en développement .NET pour affiner mes compétences back‑end.
+          </p>
+          <p>
+            Polyvalent et orienté solutions, j’interviens autant sur le développement web que sur l’intégration, la sécurité et le logiciel, selon les besoins de chaque projet.
+          </p>
+          <p>
+            Curieux de nature, j’aime explorer de nouvelles idées et technologies pour relever des défis créatifs et techniques. Je suis actuellement à la recherche de nouveaux défis professionnels et serais ravi d’échanger avec vous sur vos projets.
+          </p>
+        </div>
+      </div>
 
-            <ul class="header-social">
-                <li><a target="_blank" href="https://twitter.com/joachim_wery"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/joachim-wery/"><i class="fab fa-linkedin-in" style="color: #ffffff;" aria-hidden="true"></i></a></li>
-                <li><a target="_blank" href="https://github.com/Jwery"><i class="fab fa-github" style="color: #ffffff;" aria-hidden="true"></i></a></li>
-            </ul>
-        </nav>
+      <div class="row about-me__buttons">
+        <div class="column large-half tab-full" data-aos="fade-up">
+          <a href="mailto:joachimwery@outlook.com" class="btn btn--stroke full-width">Parlons‑en</a>
+        </div>
+        <div class="column large-half tab-full" data-aos="fade-up">
+          <a href="/cv/CV%20.NET%20FR.pdf" class="btn btn--primary full-width">Télécharger mon CV</a>
+        </div>
+      </div>
+    </div>
 
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    <div class="about-experience">
+      <div class="row heading-block" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading">Expérience</h2>
+        </div>
+      </div>
 
-    </header> <!-- end s-header -->
-
-
-    <!-- intro
-    ================================================== -->
-    <section id="intro" class="s-intro target-section">
-
-        <div class="row intro-content">
-
-            <div class="column large-9 mob-full intro-text">
-                <h3>Hello, moi c'est Joachim Wéry</h3>
-                <h1>
-                    Développeur<br>
-                    Designer UI/UX <br>
-                    Graphiste
-                </h1>
+      <div class="row about-experience__timeline">
+        <div class="column large-half tab-full" data-aos="fade-up">
+          <div class="timeline">
+            <div class="timeline__icon-wrap">
+              <span class="timeline__icon timeline__icon--work" aria-hidden="true"></span>
             </div>
 
-            <div class="intro-scroll">
-                <a href="#about" class="intro-scroll-link smoothscroll">
-                    Scrollez pour voir plus
-                </a>
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">2020 – Aujourd’hui</p>
+                <h3 class="item-title">Freelance</h3>
+                <h5>Développeur Freelance indépendants et PME</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Conception et programmation de site internet responsive dans le respect du cahier des charges de l’entreprise. Mise en ligne et amélioration des performances de sites internet déjà existant, support avec les clients. Travail du SEO et optimisation pour que l’entreprise soit rapidement trouvable sur les moteurs de recherche.</p>
+              </div>
             </div>
 
-            <div class="intro-grid"></div>
-            <div class="intro-pic"></div>
-
-        </div> <!-- end row -->
-
-    </section> <!-- end intro -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
-
-        <div class="about-me">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">A mon propos</h2>
-                </div>
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">Septembre 2024 – Janvier 2025</p>
+                <h3 class="item-title">Group‑IPS</h3>
+                <h5>Analyste fonctionnel</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Rôle essentiel dans la mise en œuvre et l’optimisation d’un nouveau système ERP. Recueil et documentation des besoins, configuration des modules et supervision de la migration des données afin d’assurer une transition fluide de l’ancien ERP vers Microsoft Dynamics 365.</p>
+              </div>
             </div>
 
-            <div class="row about-me__content" data-aos="fade-up">
-                <div class="column large-full about-me__text">
-                    <p class="lead">
-                        Mon nom est JOACHIM WERY, je suis un développeur et un Webdesigner expérimenté depuis près de 2 ans.
-                    </p>
-
-                    <p>
-                        Je suis fasciné par les médias et le numérique. J’ai décroché un diplôme de 3 ans en écriture multimédia, puis un master de 2 ans en architecture transmédia. Pour rester à la pointe, j’ai suivi une formation de 6 mois en Web Design. J'ai ensuite enchaîné avec une formation en développement .NET pour me familiariser avec le Back-end.
-                    </p>
-
-                    <p>
-                        Je suis un polyvalent orienté solution qui dispose de compétences variées. Je peux travailler dans de multiples domaines, du développement web à l’intégration de sites, en passant par la sécurité et le développement logiciel. 
-                    </p>
-
-                    <p>
-                    
-                        Je suis passionné par la découverte de nouvelles idées et de solutions techniques pour relever des défis créatifs et techniques. Si vous cherchez un junior avec une vision innovante et créative, je suis la personne qui vous faut. Mes compétences et mon expérience me permettront de contribuer de manière significative à votre entreprise. Je suis actuellement à la recherche de nouveaux défis professionnels dans ces domaines. Contactez-moi pour toute opportunité de travail. Je suis prêt à affronter des défis nouveaux et innovants.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="row about-me__buttons">
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="mailto:joachimwery@outlook.com" class="btn btn--stroke full-width">Parlons-en</a>
-                </div>
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="/cv/CV .NET FR.pdf" class="btn btn--primary full-width">Téléchargez mon CV</a>
-                </div>
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">Avril 2023 – Septembre 2023</p>
+                <h3 class="item-title">UPARTNER</h3>
+                <h5>Développeur full‑stack</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Production de sites sur mesure avec WordPress & Elementor. Optimisation SEO et performance (articles, images) pour des sites plus rapides et accessibles. Réalisation de A à Z, du prototype à la mise en ligne.</p>
+              </div>
             </div>
 
-        </div> <!-- end about-me -->
-
-        <div class="about-experience">
-
-            <div class="row heading-block" data-aos="fade-up">
-                <div class="column large-full">
-                    <h2 class="section-heading">Expérience</h2>
-                </div>
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">Octobre 2022 – Janvier 2023</p>
+                <h3 class="item-title">Arkam Agency</h3>
+                <h5>Webdesigner (stage)</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Réalisation de prototypes d’interfaces animés et collaboration étroite avec les équipes back‑end et front‑end pour une intégration fluide du site final.</p>
+              </div>
             </div>
 
-            <div class="row about-experience__timeline">
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--work"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">Septembre 2024 - Janvier 2025</p>
-                                <h3 class="item-title">Group-IPS</h3>
-                                <h5>Analyste Fonctionnel</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Rôle essentiel dans la mise en œuvre et l'optimisation d'un nouveau système de planification des ressources de l'entreprise (ERP). Recueil et documentation des besoins, configuration des modules du système et supervision de la migration des données afin d'assurer une transition en douceur de l'ancien ERP à Microsoft Dynamics 365.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">Avril 2023 - Septembre 2023</p>
-                                <h3 class="item-title">UPARTNER</h3>
-                                <h5>Développeur Fullstack</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Production de sites web sur mesure avec WordPress et Elementor. Optimisation d'articles de blog et d'images pour des sites plus performants, fluides et optimisés. Réalisation de sites web du prototype à la mise en ligne.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">Octobre 2022 - Janvier 2023</p>
-                                <h3 class="item-title">Arkam Agency</h3>
-                                <h5>Webdesigner (stage)</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Réalisation de prototypes d'interfaces animés captivants et collaboration étroite avec une équipe de développeurs back-end et front-end pour assurer une intégration fluide du site final.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">Novembre 2021 - Mars 2022</p>
-                                <h3 class="item-title">RedCup Charleroi</h3>
-                                <h5>Community Manger</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Générer et programmer des publications captivantes pour les réseaux sociaux du bar, attisant l'enthousiasme pour les événements et soirées spéciales.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">2017 - 2021</p>
-                                <h3 class="item-title">Bershka</h3>
-                                <h5>Vendeur prêt à porter (job étudiant)</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Responsable rayon homme, conseil clients, gestionnaire du stock et réassortisseur du magasin.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="column large-half tab-full" data-aos="fade-up">
-                    <div class="timeline">
-
-                        <div class="timeline__icon-wrap">
-                            <span class="timeline__icon timeline__icon--education"></span>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe"> 2023 - Aujourd'hui</p>
-                                <h3 class="item-title">Technofutur TIC</h3>
-                                <h5>Formation Développement Full-stack .NET + cybersécurité</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Développement d'applications axé sur la cybersécurité, maîtrise des langages C#, Angular et Javascript pour concevoir des applications robustes et sécurisées.</p>
-                             </div>
-
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe"> 2022 - 2023</p>
-                                <h3 class="item-title">CEPEGRA Gosselies</h3>
-                                <h5>Formation Webdesign UI/UX</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Compréhension des principes fondamentaux du design, tels que la composition, la couleur, la typographie et la hiérarchie visuelle. Tests d'utilisabilité et des évaluations de l'interface utilisateur pour améliorer la convivialité. Développement de compétences pour résoudre des problèmes de conception complexes et trouver des solutions créatives.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">2019 - 2021</p>
-                                <h3 class="item-title">Haute école Albert Jacquard & UNamur</h3>
-                                <h5>Master en Architecture Transmédia</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Maîtrise des outils et techniques de la narration transmédia, développement de compétences en production audiovisuelle et en gestion de projets, et préparation à une carrière dans les industries créatives et culturelles.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">2015 - 2019</p>
-                                <h3 class="item-title">Haute École Condorcet</h3>
-                                <h5>Bachelier en Écriture Multimédia</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Maîtrise de l'écriture de scénarios captivants, la conception d'interfaces et la production audiovisuelle. Développement de compétences techniques, créatives et collaboratives. Préparation à une carriètr dans les domaines de la communication, du marketing et du divertissement.
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <p class="timeline__timeframe">2012 - 2015</p>
-                                <h3 class="item-title">Institut Jean Jaurès</h3>
-                                <h5>Technicien en Infographie</h5>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Création de campagnes publicitaires, prépresse, sérigraphie, dessin technique, infographie, HTML/CSS/JavaScript.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">Novembre 2021 – Mars 2022</p>
+                <h3 class="item-title">RedCup Charleroi</h3>
+                <h5>Community manager</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Création et programmation de publications pour les réseaux sociaux du bar, afin d’attiser l’intérêt pour les événements et soirées.</p>
+              </div>
             </div>
 
-        </div> <!-- end about-experience -->
-
-    </section> <!-- end s-about -->
-
-
-    <!-- services
-    ================================================== -->
-    <section id="services" class="s-services ss-dark target-section">
-
-        <div class="shadow-overlay"></div>
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Compétences</h2>
-
-                <p class="section-desc">
-                    Mon objectif: une harmonie entre élégance et efficacité
-                </p>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Développement Back-end et Front-end</h4>
-                    <p>
-                        Le domaine du développement me passionne car il est en perpétuelle évolution. C'est pourquoi je suis en quête permanente de nouveaux frameworks et outils pour rester à la pointe des dernières tendances et technologies.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Design d'interface</h4>
-                    <p>
-                        Je façonne des sites web captivants et ergonomiques, où la beauté rencontre la fonctionnalité. Mon expertise en web design, expérience utilisateur et interface utilisateur garantit une navigation fluide et intuitive pour vos visiteurs.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Graphiste</h4>
-                    <p>
-                        Passionné par le design depuis l'enfance, j'ai évolué au fil des versions de la suite Adobe, maîtrisant ses outils dès CS4. Cette expérience m'a permis de développer une solide compréhension des principes fondamentaux du design et une expertise dans l'utilisation de Photoshop, Illustrator et InDesign.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Communication</h4>
-                    <p>
-                        Fort de 3 années en Ecriture Multimédia, j'ai développé des compétences solides en Communication Digitale. Maîtrisant le Community Management, le référencement de sites web et les stratégies de marketing digital, je suis capable de créer et déployer des campagnes digitales impactantes pour accroitre la visibilité et l'engagement des marques.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Photographie</h4>
-                    <p>
-                        Passionné de photographie automobile et doté d'une grande expérience dans la communication avec les clients, j'ai acquis une solide expertise en tant que photographe pour des événements et des petites entreprises. Mon travail met en valeur l'essence des véhicules et capture leur beauté unique.
-                    </p>
-                </div>
-            </div>
-
-            <div class="column item-service" data-aos="fade-up">
-                <div class="item-service__content">
-                    <h4 class="item-title">Vidéo</h4>
-                    <p>
-                        Passionné par l'audiovisuel, j'ai réalisé des capsules pour le Quai 10 de Charleroi, des trailers de séries et des films amateurs. Mon expertise s'étend du montage à la réalisation, pour donner vie à des projets créatifs.</p>
-                </div>
-            </div>
-
-        </div> <!-- end services-list -->
-
-    </section> <!-- end s-services -->
-
-
-    <!-- CTA
-    ================================================== -->
-    <section class="s-cta ss-dark">
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-desc">
-                    Besoin d'un site internet ?
-                </h2>
-            </div>
-        </div> <!-- end heading-block -->
-
-        <div class="row cta-content" data-aos="fade-up">
-            <div class="column large-full">
-                <p>
-                 N'hésitez pas à me <a href="mailto:joachimwery@outlook.com">contacter</a>
-                 pour un site optimisé et design 
-                </p>
-
-                <a href="mailto:joachimwery@outlook.com" class="btn full-width">ME CONTACTER</a>
-            </div>
-        </div> <!-- end ad-content -->
-
-    </section> <!-- end s-cta -->
-
-
-    <!-- works
-    ================================================== -->
-    <section id="works" class="s-works target-section">
-
-        <div class="row heading-block heading-block--center" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Mes travaux</h2>
-                <p class="section-desc">
-                    Voici quelques-uns des derniers travaux que j'ai réalisé. 
-                </p>
-            </div>
-        </div> <!-- end heading-block -->
             
-
-
-
-
-        <section class="section" data-aos="fade-up">
-            <div class="cards">
-              <a target="_blank" href="https://www.figma.com/proto/cAzUa4juyrJgWWzPFDuZ0T/Application-SafeParents?page-id=23%3A5&type=design&node-id=431-2528&viewport=3638%2C-1607%2C0.66&t=UoTEIA5U6hYTSOsu-1&scaling=scale-down&starting-point-node-id=431%3A2528" class="card card-1">
-                <figure class="visual">
-                  <img
-                    class="card-img"
-                    src="/images/portfolio/Safeparents.jpg"
-                    alt="Logo Safe Parent with a blurry picture in background"
-                  />
-                
-                  <figcaption class="figcaption"><img src="/images/portfolio/safelogo.svg" alt="logo sageparents"></figcaption>
-                </figure>
-              </a>
-              <a target="_blank" href="https://arkam.be/" class="card card-2">
-                <figure class="visual">
-                  <img
-                    class="card-img"
-                    src="/images/portfolio/arkam.webp"
-                    alt="Batman Speaking"
-                  />
-                  <figcaption class="figcaption"><img src="/images/portfolio/aOrange.svg" alt="logo arkam"></figcaption>
-                </figure>
-              </a>
-              <a target="_blank" href="https://chevalliance.eu/" class="card card-3">
-                <figure class="visual">
-                  <img
-                    class="card-img"
-                    src="/images/portfolio/Chevalliance.png"
-                    alt="Horse in background"
-                  />
-                  <figcaption class="figcaption"><img src="/images/portfolio/logocheval.svg" alt="Logo Chevalliance"></figcaption>
-                </figure>
-              </a>
-              <a target="_blank" href="https://tiffanyphotographie.be/" class="card card-4">
-                <figure class="visual">
-                  <img
-                    class="card-img"
-                    src="/images/portfolio/mariage.jpg"
-                    alt="Tiffany Photography website"
-                  />
-                  <figcaption class="figcaption"><img src="/images/portfolio/logotiff.svg" alt="Logo tiffanyphotographie"</figcaption>
-                </figure>
-              </a>
-            </div>
-          </section>
-
-          <section class="section">
-            <div class="cards">
-                <a target="_blank" href="https://www.figma.com/proto/tZ9EUdv9qtrTrFiYEopOg8/Borne-arcade?page-id=370%3A2824&node-id=370-7586&viewport=2591%2C1949%2C0.11&scaling=scale-down&starting-point-node-id=370%3A7586" class="card card-6">
-                    <figure class="visual">
-                      <img
-                        class="card-img"
-                        src="/images/portfolio/donkey.gif"
-                        alt="Retros Application"
-                      />
-                      <figcaption class="figcaption"><img src="/images/portfolio/logoretros.svg" alt="logo arkam"></figcaption>
-                    </figure>
-                  </a>
-              <a target="_blank" href="https://www.figma.com/proto/SWo2Tk2NJf7A1dN7RCSWpj/Maquette-Horus?page-id=0%3A1&node-id=1-4&viewport=-362%2C385%2C0.36&t=d8EjpX4IObYMu87T-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A4" class="card card-5">
-                <figure class="visual">
-                  <img
-                    class="card-img"
-                    src="/images/portfolio/Falco.jpg"
-                    alt="Logo Falco by Horus"
-                  />
-                  <figcaption class="figcaption"><img src="/images/portfolio/logofalco.svg" alt="logo Falco"></figcaption>
-                </figure>
-              </a>
-              <a  class="card card-7">
-                <figure class="visual-2">
-                  <figcaption class="figcaption2">Autres projets à venir</figcaption>
-                </figure>
-              </a>
-            </div>
-          </section>
-
-    <!-- testimonies
-    ================================================== -->
-    <!--<section class="s-testimonials">
-    
-        <div class="row testimonials" data-aos="fade-up">
-
-            <div class="column large-full testimonials__slider">
-
-                <div class="testimonials__slide">
-                    <p>Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
-                    Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
-                    Laudantium quia consequatur molestias delectus culpa.</p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Tim Cook</strong>
-                            <span>CEO, Apple</span>
-                        </cite>
-                    </div>
-                </div> <!-- end testimonials__slide -->
-
-                <!--<div class="testimonials__slide">
-                    <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                    Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                        Quasi voluptas eius distinctio. Atque eos maxime.</p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Sundar Pichai</strong>
-                            <span>CEO, Google</span>
-                        </cite>
-                    </div>
-                </div> <!-- end testimonials__slide -->
-
-                <!-- <div class="testimonials__slide">
-                    <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
-                    Voluptatem dignissimos ut.</p>
-                    <div class="testimonials__info">
-                        <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonials__avatar">
-                        <cite class="testimonials__cite">
-                            <strong>Satya Nadella</strong>
-                            <span>CEO, Microsoft</span>
-                        </cite>
-                    </div>
-                </div> <!-- end testimonials__slide -->
-                
-            </div> <!-- end testimonials__slider -->
-
-        </div> <!-- end testimonials -->
-
-    </section> <!-- end s-testimonials -->
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact ss-dark target-section">
-
-        <div class="row heading-block" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading">Restons en contact</h2>
-            </div>
+          </div>
         </div>
 
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="column large-full">
-                <p class="contact-email">
-                    <a href="mailto:joachimwery@outlook.com">joachimwery@outlook.com</a>
-                </p>
-
-                <p class="section-desc">
-                N'hésitez pas à me contacter, je serai ravis de vous écouter et vous aider à transformer vos idées en réalité.  
-                <a href="mailto:joachimwery@outlook.com">Contactez-moi</a>.
-                </p>
+        <div class="column large-half tab-full" data-aos="fade-up">
+          <div class="timeline">
+            <div class="timeline__icon-wrap">
+              <span class="timeline__icon timeline__icon--education" aria-hidden="true"></span>
             </div>
+
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">2023 – 2024</p>
+                <h3 class="item-title">Technofutur TIC</h3>
+                <h5>Formation développement full‑stack .NET + cybersécurité</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Développement d’applications avec un focus sécurité. Maîtrise de C#, Angular et JavaScript pour concevoir des applications robustes et sécurisées.</p>
+              </div>
+            </div>
+
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">2022 – 2023</p>
+                <h3 class="item-title">CEPEGRA Gosselies</h3>
+                <h5>Formation webdesign UI/UX</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Principes de design (composition, couleur, typographie, hiérarchie), tests d’utilisabilité et évaluation d’interface pour améliorer la convivialité. Résolution de problèmes complexes avec des solutions créatives.</p>
+              </div>
+            </div>
+
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">2019 – 2021</p>
+                <h3 class="item-title">HEAJ & UNamur</h3>
+                <h5>Master en architecture transmédia</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Outils et techniques de narration transmédia, compétences en production audiovisuelle et gestion de projets pour les industries créatives et culturelles.</p>
+              </div>
+            </div>
+
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">2015 – 2019</p>
+                <h3 class="item-title">Haute École Condorcet</h3>
+                <h5>Bachelier en écriture multimédia</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Écriture de scénarios, conception d’interfaces et production audiovisuelle. Compétences techniques, créatives et collaboratives pour la communication et le marketing.</p>
+              </div>
+            </div>
+
+            <div class="timeline__block">
+              <div class="timeline__bullet"></div>
+              <div class="timeline__header">
+                <p class="timeline__timeframe">2012 – 2015</p>
+                <h3 class="item-title">Institut Jean Jaurès</h3>
+                <h5>Technicien en infographie</h5>
+              </div>
+              <div class="timeline__desc">
+                <p>Campagnes publicitaires, prépresse, sérigraphie, dessin technique, infographie, HTML/CSS/JavaScript.</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+  <!-- Compétences -->
+  <section id="services" class="s-services ss-dark target-section" aria-label="Compétences">
+    <div class="shadow-overlay" aria-hidden="true"></div>
 
-            <div class="column large-5 medium-full contact-phone">
-                <h4><Appelez-moi></Appelez-moi></h4>
-                <a href="tel:+32497315231">+32 497 31 52 31</a>
-            </div>
+    <div class="row heading-block heading-block--center" data-aos="fade-up">
+      <div class="column large-full">
+        <h2 class="section-heading section-heading--centerbottom">Compétences</h2>
+        <p class="section-desc">Mon objectif : trouver l’équilibre entre élégance et efficacité.</p>
+      </div>
+    </div>
 
-            <div class="column large-7 medium-full contact-social">
-                <h4>Liens utiles</h4>
-                <ul>
-                    <li><a target="_blank" href="https://twitter.com/joachim_wery" title="Twitter">Twitter</a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/joachim-wery/" title="LinkedIn">LinkedIn</a></li>
-                    <li><a target="_blank" href="https://github.com/Jwery" title="Github">Github</a></li>
-                </ul>
-            </div>
-            <div class="column large-7 medium-full contact-social">
-                <h4>Changer langue</h4>
-                <ul>
-                    <li><a href="/english.html" title="Twitter">English</a></li>
-                </ul>
-            </div>
-
-
-
-        </div> <!-- end contact-infos -->
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="column large-full ss-copyright">
-                <span>© Joachim Wéry 2024-2025</span>        
-
-            <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
-            </div>
+    <div class="row services-list block-large-1-3 block-medium-1-2 block-tab-full">
+      <div class="column item-service" data-aos="fade-up">
+        <div class="item-service__content">
+          <h4 class="item-title">Développement back‑end & front‑end</h4>
+          <p>Le développement se réinvente sans cesse. Je veille en continu sur les frameworks et outils émergents pour livrer des solutions fiables et adaptées.</p>
         </div>
-    </footer>
+      </div>
 
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-            </div>
-
+      <div class="column item-service" data-aos="fade-up">
+        <div class="item-service__content">
+          <h4 class="item-title">Design d’interface</h4>
+          <p>Je conçois des interfaces où l’esthétique sert l’expérience. Mon approche UX/UI garantit des parcours fluides et intuitifs.</p>
         </div>
+      </div>
 
-    </div><!-- end photoSwipe background -->
+      <div class="column item-service" data-aos="fade-up">
+        <div class="item-service__content">
+          <h4 class="item-title">Graphisme</h4>
+          <p>Passionné depuis l’enfance, je maîtrise la suite Adobe (depuis CS4) et crée des identités visuelles fidèles à l’essence de chaque marque.</p>
+        </div>
+      </div>
 
+      <div class="column item-service" data-aos="fade-up">
+        <div class="item-service__content">
+          <h4 class="item-title">Communication</h4>
+          <p>Trois années en écriture multimédia m’ont donné une solide culture en communication digitale : community management, SEO et campagnes marketing.</p>
+        </div>
+      </div>
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+      <div class="column item-service" data-aos="fade-up">
+        <div class="item-service__content">
+          <h4 class="item-title">Photographie</h4>
+          <p>Photographe automobile, j’accompagne événements et PME pour révéler les détails qui font la singularité de leurs véhicules.</p>
+        </div>
+      </div>
 
+      <div class="column item-service" data-aos="fade-up">
+        <div class="item-service__content">
+          <h4 class="item-title">Vidéo</h4>
+          <p>Je réalise capsules, trailers et contenus audiovisuels pour donner une voix visuelle forte aux projets culturels et associatifs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appel à l’action -->
+  <section class="s-cta ss-dark" aria-label="Appel à l’action">
+    <div class="row heading-block heading-block--center" data-aos="fade-up">
+      <div class="column large-full">
+        <h2 class="section-desc">Besoin d’un site internet ?</h2>
+      </div>
+    </div>
+
+    <div class="row cta-content" data-aos="fade-up">
+      <div class="column large-full">
+        <p>
+          N’hésitez pas à me <a href="mailto:joachimwery.01@gmail.com">contacter</a> pour un site optimisé et soigné.
+        </p>
+        <a href="mailto:joachimwery.01@gmail.com" class="btn full-width">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travaux -->
+  <section id="works" class="s-works target-section" aria-label="Mes travaux">
+    <div class="row heading-block heading-block--center" data-aos="fade-up">
+      <div class="column large-full">
+        <h2 class="section-heading section-heading--centerbottom">Mes travaux</h2>
+        <p class="section-desc">Voici quelques‑uns de mes derniers projets.</p>
+      </div>
+    </div>
+
+    <section class="section" data-aos="fade-up" aria-label="Projets 1">
+      <div class="cards">
+        <a target="_blank" rel="noopener" href="https://www.figma.com/proto/cAzUa4juyrJgWWzPFDuZ0T/Application-SafeParents?page-id=23%3A5&type=design&node-id=431-2528&viewport=3638%2C-1607%2C0.66&t=UoTEIA5U6hYTSOsu-1&scaling=scale-down&starting-point-node-id=431%3A2528" class="card card-1">
+          <figure class="visual">
+            <img class="card-img" src="/images/portfolio/Safeparents.jpg" alt="SafeParents — écran de l’application" />
+            <figcaption class="figcaption"><img src="/images/portfolio/safelogo.svg" alt="Logo SafeParents" /></figcaption>
+          </figure>
+        </a>
+
+        <a target="_blank" rel="noopener" href="https://arkam.be/" class="card card-2">
+          <figure class="visual">
+            <img class="card-img" src="/images/portfolio/arkam.webp" alt="Arkam Agency — aperçu site" />
+            <figcaption class="figcaption"><img src="/images/portfolio/aOrange.svg" alt="Logo Arkam" /></figcaption>
+          </figure>
+        </a>
+
+        <a target="_blank" rel="noopener" href="https://chevalliance.eu/" class="card card-3">
+          <figure class="visual">
+            <img class="card-img" src="/images/portfolio/Chevalliance.png" alt="Chevalliance — aperçu site" />
+            <figcaption class="figcaption"><img src="/images/portfolio/logocheval.svg" alt="Logo Chevalliance" /></figcaption>
+          </figure>
+        </a>
+
+        <a target="_blank" rel="noopener" href="https://tiffanyphotographie.be/" class="card card-4">
+          <figure class="visual">
+            <img class="card-img" src="/images/portfolio/mariage.jpg" alt="Tiffany Photographie — aperçu site" />
+            <figcaption class="figcaption"><img src="/images/portfolio/logotiff.svg" alt="Logo Tiffany Photographie" /></figcaption>
+          </figure>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Projets 2">
+      <div class="cards">
+        <a target="_blank" rel="noopener" href="https://www.figma.com/proto/tZ9EUdv9qtrTrFiYEopOg8/Borne-arcade?page-id=370%3A2824&node-id=370-7586&viewport=2591%2C1949%2C0.11&scaling=scale-down&starting-point-node-id=370%3A7586" class="card card-6">
+          <figure class="visual">
+            <img class="card-img" src="/images/portfolio/donkey.gif" alt="Prototype borne d’arcade" />
+            <figcaption class="figcaption"><img src="/images/portfolio/logoretros.svg" alt="Logo Retros" /></figcaption>
+          </figure>
+        </a>
+
+        <a target="_blank" rel="noopener" href="https://www.figma.com/proto/SWo2Tk2NJf7A1dN7RCSWpj/Maquette-Horus?page-id=0%3A1&node-id=1-4&viewport=-362%2C385%2C0.36&t=d8EjpX4IObYMu87T-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A4" class="card card-5">
+          <figure class="visual">
+            <img class="card-img" src="/images/portfolio/Falco.jpg" alt="Falco by Horus — identité" />
+            <figcaption class="figcaption"><img src="/images/portfolio/logofalco.svg" alt="Logo Falco" /></figcaption>
+          </figure>
+        </a>
+
+        <div class="card card-7" aria-label="Autres projets à venir">
+          <figure class="visual-2">
+            <figcaption class="figcaption2">Autres projets à venir</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="s-contact ss-dark target-section" aria-label="Contact">
+    <div class="row heading-block" data-aos="fade-up">
+      <div class="column large-full">
+        <h2 class="section-heading">Restons en contact</h2>
+      </div>
+    </div>
+
+    <div class="row contact-main" data-aos="fade-up">
+      <div class="column large-full">
+        <p class="contact-email">
+          <a href="mailto:joachimwery.01@gmail.com">joachimwery.01@gmail.com</a>
+        </p>
+        <p class="section-desc">
+          N’hésitez pas à me contacter : je serai ravi d’échanger et de vous aider à transformer vos idées en réalité.
+          <a href="mailto:joachimwery@outlook.com">Contactez‑moi</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+      <div class="column large-5 medium-full contact-phone">
+        <h4>Appelez‑moi</h4>
+        <a href="tel:+32497315231">+32 497 31 52 31</a>
+      </div>
+
+      <div class="column large-7 medium-full contact-social">
+        <h4>Liens utiles</h4>
+        <ul>
+          <li><a target="_blank" rel="noopener" href="https://twitter.com/joachim_wery" title="Twitter">Twitter</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/joachim-wery/" title="LinkedIn">LinkedIn</a></li>
+          <li><a target="_blank" rel="noopener" href="https://github.com/Jwery" title="GitHub">GitHub</a></li>
+        </ul>
+      </div>
+
+      <div class="column large-7 medium-full contact-social">
+        <h4>Changer de langue</h4>
+        <ul>
+          <li><a href="/english.html" hreflang="en" lang="en">English</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer role="contentinfo">
+    <div class="row">
+      <div class="column large-full ss-copyright">
+        <span>© Joachim Wéry 2024‑2025</span>
+      </div>
+      <div class="ss-go-top">
+        <a class="smoothscroll" title="Retour en haut" href="#top" aria-label="Retour en haut"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PhotoSwipe (structure) -->
+  <div class="pswp" role="dialog" aria-hidden="true" tabindex="-1">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button class="pswp__button pswp__button--close" title="Fermer (Esc)"></button>
+          <button class="pswp__button pswp__button--share" title="Partager"></button>
+          <button class="pswp__button pswp__button--fs" title="Plein écran"></button>
+          <button class="pswp__button pswp__button--zoom" title="Zoom"></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+        <button class="pswp__button pswp__button--arrow--left" title="Précédent (flèche gauche)"></button>
+        <button class="pswp__button pswp__button--arrow--right" title="Suivant (flèche droite)"></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts fin de page -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 </body>
+</html>
